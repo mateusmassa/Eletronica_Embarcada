@@ -1,0 +1,36 @@
+-- Questionário Eletrônica Embarcada - Aula 2 (20/03) --
+
+1) Quais são os clocks internos do MSP430 e quais são as diferenças entre eles?
+R: Existe o Master clock (MCLK) que é um clock para o funcionamento da CPU e seus
+periféricos e pode ser obtido a partir de um oscilador controlado digitalmente.
+Tem também o Subsystem master clock (SMCLK) e Auxiliary clock (ACLK) que é um clock 
+voltado para o funcionamento dos periféricos da placa.
+
+2) Explique o que são exceções e quais as diferenças entre interrupções e reset.
+R: Exceções são processos que alteram a execução normal do programa, e podem ser 
+de dois tipos: interrupção e reset. Interrupções são causadas por hardware e que 
+indicam eventos que devem ser tratados, fazendo com que o processador pare o que 
+está fazendo, guarda o conteúdo do Program Counter(PC) e do Status Register(SR) e
+executa a ISR(interrupt service routine) correspondente ao evento à ser tratado.
+O reset diferente da interrupção pode ser gerado também pelo Watchdog Timer, e 
+realiza a reiniciação de todo o sistema.
+
+3) Qual seria a capacidade máxima da RAM e da memória flash se elas fossem 
+expandidas para preencher as regiões não utilizadas?
+R: A RAM ficaria com 2560 bytes de memória e a flash ficaria com 59392 bytes de memória.
+
+4) Quantos pinos seriam aproximadamente necessários no F2013 se cada um 
+tivesse apenas uma função?
+R: Seriam necessários aproximadamente 50 pinos para cumprir todas as funções.
+
+5) Quais são os registradores da CPU do MSP430 e qual é a função de cada um?
+R: Registrador R0/PC: Registrador program counter(PC), aponta para o endereço da 
+próxima instrução à ser executada.
+Registrador R1/SP: Registrador stack pointer(SP), aponta para o menor endereço da 
+pilha, que guarda informações importantes como o endereço de retorno para o PC,
+quando é executada uma subrotina.
+Registrador R2/SR/CG1: Registrado status register(SR), gera flags (bits) de estado 
+como por exemplo C, Z, N, V, GIE, CPUOFF, OSCOFF, SCG e SCG1.
+Registrador R3/CG2: Registrador constant generator, fornece os 6 valores mais utilizados,
+onde o compilador e o montador se encarregam de utilizá-los.
+Registradores R4 a R15: Registradores de uso geral.
