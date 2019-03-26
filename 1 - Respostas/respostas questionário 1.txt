@@ -1,0 +1,55 @@
+﻿--Questionário Eletrônica Embarcada - 18/03 --
+
+
+1- Diferencie microprocessador de microcontrolador e dê exemplos.
+
+R: Microprocessador constitui um componente destinado à realizar determinadas funções lógico-matemáticas e operações específicas, 
+para isso possui uma unidade de controle, uma unidade lógica aritmética(ULA) e registradores. Um exemplo seria o MIPS-8. Já o 
+microcontrolador é constituído por um conjunto de componentes incluindo um microprocessador e alguns periféricos, sendo eles: 
+memória para armazenamento, barramentos, relógio(clock) e entradas/saídas. É um computer chip, um seja, um computador em um único 
+chip. Um exemplo seria o chip ATmega. 
+
+
+
+2- Quais as diferenças entre os barramentos de dados e de endereços?
+
+R: O barramento de dados é um barramento utilizado para o transporte dos dados por entre os componentes do microcontrolador, ou seja 
+é uma caminho de duas vias onde os dados entram e saem conforme a instrução é executada, no qual o tamanho do barramento limita o tamanho 
+do dado transportado. Já o barramento de endereço é um barramento controlado pela unidade de controle que indica o endereço da memória que 
+o controlador deseja acessar, onde cada dado da memória é associado à um endereço.
+
+
+
+3- Quais são as diferenças entre as memórias RAM e ROM?
+
+R:A memória RAM(Random Acess Memory) é uma memória volátil, reprogramável mas que não grava os dados após o corte de energia. Pode ser de 
+dois tipos: Estática e Dinâmica. A estática é capaz de manter o dado quando o clock é parado, mas precisa de mais componentes. Já a dinâmica 
+possui menos componentes e precisa atualizada constantemente. 
+A memória ROM(Read Only Memory) é basicamente uma memória para leitura de dados 
+tendo limitações de programação para escrita, sendo não volátil e que armazena os dados após o corte de energia. Possui algumas adaptações como 
+a EPROM que é programável elétricamente e que pode ser apagada a partir de luz UV, mas que também tem limitações de programação.
+
+
+
+4- Quais são as diferenças, vantagens e desvantagens das arquiteturas Harvard e Von Neumann?
+
+R:
+
+ A principal diferença entre as arquiteturas de Havard e Von Neumann é que a arquitetura de
+Havard possui duas memórias, sendo uma para dados e outra para as instruções do programa. Já na 
+arquitetura Von Neumann hà apenas um único espaço de memória compartilhado para instruções e dados.
+As vantangens da arquitetura de Havard é que ela permite leitura simultânea de dados e do programa, 
+permite barramento de dados e programa separados. As desvantagens é que ela é uma arquitetura mais
+complexa que a de Von Neumann e guarda dados constantes na memória de programa, o que requer instruções
+específicas.
+As vantangens da arquitetura de Von Neumann é a simplicidade em relação a arquitetura de Havard. E a principal
+desvantagem é que ela é menos eficiente.
+
+5- O que são sistemas embarcados? Dê exemplos de aplicações.
+
+R:
+ São sistemas constituídos principalmente de um microcontrolador que tem uma determinada função específica, 
+de modo que todo o sistema é projetado, tanto hardware como software, pensando no objetivo a na funcionalidade final do sistema. 
+Não pode ter sua funcionalidade mudada durante o processo, sendo necessário reprogramar ou mesmo refazer o sistema. Trata-se então 
+de um sistema projetado para efetuar o monitoramento ou controle de determinada 
+situação, atuando somente para aquela funcionalidade específica. Exemplos: celulares, impressoras, videogames.   
